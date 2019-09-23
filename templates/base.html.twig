@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MathisGrandis - {% block title %}{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <div class="wrapper-global">
+      <header id="header">
+        <div id="header-logo"><a href="/"><img src="{{ asset('build/images/logo.svg') }}" alt="Accueil"></a></div>
+
+        <nav id="header-nav">Menu (on the right)</nav>
+      </header>
+      <body>
+          {% block body %}{% endblock %}
+          {% block javascripts %}{% endblock %}
+      </body>
+    </div>
+</html>
